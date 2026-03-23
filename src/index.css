@@ -1,0 +1,120 @@
+
+/* fontfamily added start */
+@font-face {
+    font-family: 'Jost-Bold';
+    src:url('../public/assets/fonts/jost-bold/Jost-Bold.woff') format('woff'),
+      url('../public/assets/fonts/jost-bold/Jost-Bold.eot') format('eot'),
+      url('../public/assets/fonts/jost-bold/Jost-Bold.ttf') format('ttf'),
+      url('../public/assets/fonts/jost-bold/Jost-Bold.svg') format('svg'),
+      url('../public/assets/fonts/jost-bold/Jost-Bold.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Jost-Regular';
+    src:url('../public/assets/fonts/jost-regular/Jost-Regular.woff') format('woff'),
+      url('../public/assets/fonts/jost-regular/Jost-Regular.eot') format('eot'),
+      url('../public/assets/fonts/jost-regular/Jost-Regular.ttf') format('ttf'),
+      url('../public/assets/fonts/jost-regular/Jost-Regular.svg') format('svg'),
+      url('../public/assets/fonts/jost-regular/Jost-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+  } 
+  @font-face {
+    font-family: 'Jost-Medium';
+    src:url('../public/assets/fonts/jost-medium/Jost-Medium.woff') format('woff'),
+      url('../public/assets/fonts/jost-medium/Jost-Medium.eot') format('eot'),
+      url('../public/assets/fonts/jost-medium/Jost-Medium.ttf') format('ttf'),
+      url('../public/assets/fonts/jost-medium/Jost-Medium.svg') format('svg'),
+      url('../public/assets/fonts/jost-medium/Jost-Medium.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Jost-SemiBold';
+    src:url('../public/assets/fonts/jost-semibold/Jost-SemiBold.woff') format('woff'),
+      url('../public/assets/fonts/jost-semibold/Jost-SemiBold.eot') format('eot'),
+      url('../public/assets/fonts/jost-semibold/Jost-SemiBold.ttf') format('ttf'),
+      url('../public/assets/fonts/jost-semibold/Jost-SemiBold.svg') format('svg'),
+      url('../public/assets/fonts/jost-semibold/Jost-SemiBold.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'CoreSansA65Bold';
+    src:url('../public/assets/fonts/coresans-bold/CoreSansA65Bold.woff') format('woff'),
+      url('../public/assets/fonts/coresans-bold/CoreSansA65Bold.eot') format('eot'),
+      url('../public/assets/fonts/coresans-bold/CoreSansA65Bold.ttf') format('ttf'),
+      url('../public/assets/fonts/coresans-bold/CoreSansA65Bold.svg') format('svg'),
+      url('../public/assets/fonts/coresans-bold/CoreSansA65Bold.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/* font family added end */
+
+/* common-css-start */
+* {margin: 0;padding: 0;box-sizing: border-box; font-family:"Jost-Regular";}
+ul{list-style-type: none;padding: 0px;margin: 0px;}
+a{text-decoration: none;outline: none;display: inline-block;vertical-align: middle;}
+p,h1,h2,h3,h4,h5,h6{margin: 0px;}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
+input[type="number"] {-moz-appearance: textfield;}
+input:focus, input:focus-visible, textarea:focus, textarea:focus-visible, select:focus, select:focus-visible{border-color:#2563eb !important;outline:none;}
+/* common-css-end */
+
+
+.common-container{padding:80px 60px;}
+.header-common-container{padding:0px 60px;}
+.about-container .about-section{display:grid;grid-template-columns: repeat(2, 1fr); gap: 56px; align-items: center;}
+.portofolio-desc{font-size:16px;line-height:19px;}
+.margin-top-20{margin:20px 0px 0px;}
+.portofolio-heading{ font-family: "Playfair Display, serif";font-size:48px;line-height:52px;font-weight:700;letter-spacing: -1;margin:0px 0px 48px;}
+.portofolio-label-section{display:flex;align-items:center;gap: 10px;margin: 0px 0px 12px;}
+.portofolio-label-divider{width: 24px;height: 2px;border-radius: 2px;}
+.portofolio-label{font-size:11px;line-height:15px;letter-spacing: 4px; text-transform:uppercase;}
+.portofolio-slider-container{overflow:hidden;mask-image: linear-gradient(90deg, transparent, black 7%, black 93%, transparent);--webkit-mask-image: 'linear-gradient(90deg, transparent, black 7%, black 93%, transparent)'; padding:14px 0px;}
+.track-left {
+          display: flex; gap: 14px; width: max-content;
+          animation: scrollLeft 30s linear infinite;
+        }
+        .track-left.paused {
+          animation-play-state: paused;
+        }
+        .skill-hover:hover {
+          transform: translateY(-8px) scale(1.04) !important;
+        }
+        .bar-fill {
+          height: 100%; border-radius: 3px;
+        }
+          @keyframes scrollLeft {
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-33.333%); }
+        }
+        @keyframes scrollRight {
+          0%   { transform: translateX(-33.333%); }
+          100% { transform: translateX(0); }
+        }
+.about-card-section{display:grid; grid-template-columns: repeat(2, 1fr);gap: 14px;}
+.about-card-heading{font-family: "Playfair Display, serif";font-weight: 700;font-size: 16px;line-height:20px;margin:0px 0px 6px;}
+.about-card-desc{font-size:15px;line-height: 19px;}
+.about-card-inner-section{ border-radius: 14px; padding:22px 18px;transition: border-color 0.2s, transform 0.25s;}
+.projects-container{display:grid;grid-template-columns: repeat(3, 1fr);gap: 18px;}
+.projects-card-container{border-radius: 16px;padding:28px 24px;position:relative;overflow:hidden;transition:transform 0.25s, border-color 0.25s, box-shadow 0.25s;cursor:pointer;}
+
+@media screen and (max-width:991px){
+  .header-common-container{padding:0px 40px;}
+  .common-container{padding:60px 40px;}
+  .about-container .about-section{grid-template-columns: 1fr;}
+   .projects-container{grid-template-columns: repeat(2, 1fr);}
+}
+@media screen and (max-width:768px){
+  .header-common-container{padding:0px 20px;}
+  .common-container{padding: 40px 20px;}
+ 
+}
+@media screen and (max-width:576px){
+.about-card-section, .projects-container{ grid-template-columns: repeat(1, 1fr);}
+}
