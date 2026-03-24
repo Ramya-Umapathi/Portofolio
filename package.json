@@ -4,9 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -20,11 +18,11 @@
     "typescript": "^5.5.3",
     "vite": "^5.4.8"
   },
-    "homepage": "https://ramya-umapathi.github.io/Portofolio/",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist"
-  }
+ "homepage": "https://ramya-umapathi.github.io/Portofolio/",
+"scripts": {
+  "dev": "vite",
+  "build": "tsc && vite build",
+  "preview": "vite preview",
+  "deploy": "npm run build && gh-pages -d dist"
+}
 }
