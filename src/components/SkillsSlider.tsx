@@ -8,7 +8,7 @@ export default function SkillsSlider() {
   const [paused, setPaused] = useState(false);
   const triple = [...SKILLS, ...SKILLS, ...SKILLS];
 
-  const cardStyle = (color: string): React.CSSProperties => ({
+  const cardStyle = (_color: string): React.CSSProperties => ({
     width: 175,
     flexShrink: 0,
     background: tk.surface,
