@@ -16,7 +16,15 @@
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.1",
+    "gh-pages": "^6.3.0",
     "typescript": "^5.5.3",
     "vite": "^5.4.8"
+  },
+    "homepage": "https://Ramya-Umapathi.github.io/Portofolio/",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   }
 }
