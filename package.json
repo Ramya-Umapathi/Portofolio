@@ -20,7 +20,7 @@
     "typescript": "^5.5.3",
     "vite": "^5.4.8"
   },
-    "homepage": "https://Ramya-Umapathi.github.io/Portofolio/",
+    "homepage": "https://ramya-umapathi.github.io/Portofolio/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
